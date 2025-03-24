@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+/********** Fonts ***********/
+
+* {
+  font-family: "Karla", sans-serif;
+}
+
+.subscription,
+.why-us {
+  color: white;
+}
+
+h1 {
+  color: hsl(179, 62%, 43%);
+}
+
+.green {
+  color: hsl(71, 73%, 54%);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.community p {
+  line-height: 160%;
+}
+
+.big-text {
+  font-size: 42px;
+  margin: 0;
+}
+
+/********** Component ***********/
+
+.root-container {
+  min-height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid cyan; */
+}
+
+.grid-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+  max-width: 800px;
+}
+
+.community {
+  grid-column: 1 / -1;
+}
+
+.grid-container > * {
+  padding: 35px;
+}
+
+.subscription {
+  background-color: hsl(179, 62%, 43%);
+}
+
+.price {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.why-us {
+  background-color: hsl(179, 62%, 53%);
+}
+
+.why-us ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.why-us ul li + li {
+  margin-top: 6px;
+}
+
+.btn {
+  background-color: hsl(71, 73%, 54%);
+  padding: 20px;
+  display: block;
+  text-align: center;
+  border-radius: 12px;
+}
