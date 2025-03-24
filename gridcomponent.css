@@ -34,6 +34,10 @@ h1 {
 
 /********** Component ***********/
 
+body {
+  background-color: hsl(204, 43%, 93%);
+}
+
 .root-container {
   min-height: 95vh;
   display: flex;
@@ -47,10 +51,13 @@ h1 {
   width: 100%;
   grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
   max-width: 800px;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .community {
   grid-column: 1 / -1;
+  background-color: white;
 }
 
 .grid-container > * {
